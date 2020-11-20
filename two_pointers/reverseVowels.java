@@ -1,3 +1,6 @@
+// 345 Reverse Vowels of a String
+// a function for checking if vowel or not...move both pointers such that they both contains vowel...and swap them.
+
 class Solution {
     public boolean isVowel(char c)
     {

@@ -1,3 +1,6 @@
+// 349 Intersection of two arrays
+// create two sets...first array direct into set..if set contains element from num2 add it into intersect...convert it into array and return
+
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> set = new HashSet<Integer>();
