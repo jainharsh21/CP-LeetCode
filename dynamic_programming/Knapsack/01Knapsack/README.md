@@ -38,3 +38,27 @@ else if(wt[n-1]>W)
 
 ### Recursive Final Code
 ![image](https://user-images.githubusercontent.com/44740658/109932980-eae7ff00-7cf0-11eb-99b7-f7e74203de68.png)
+
+## Memoization
+
+It is an alternative for top-down approach(tabular)
+
+Adding two lines to the recursive code memoizes it
+
+First create a matrix of dimension mxn where m and n would be the parameters that are going to change in recursive function(W and n in this case)
+
+Then fill the whole matrix with -1
+
+Before calling recursive function check if the value is -1 and if there is a value then return it(using memset() in C)
+
+#### Note for java to initialize a matrix with a number(1 in this case) 
+
+```
+int[][] arr2 = new int[5][5];  
+for(int[] arr1 : arr2) 
+  Arrays.fill(arr1, 1);
+```
+
+### Code After Memoization(additional code in blue)
+
+![image](https://user-images.githubusercontent.com/44740658/109938148-b591e000-7cf5-11eb-8e10-f7a754e97fdc.png)
