@@ -66,3 +66,30 @@ for(int[] arr1 : arr2)
 ### Code After Memoization(additional code in blue)
 
 ![image](https://user-images.githubusercontent.com/44740658/109938148-b591e000-7cf5-11eb-8e10-f7a754e97fdc.png)
+
+## Bottom Up Approach
+
+In bottom up approach(or tabulation) we don't use recursive calls
+It is better than recursion(not much difference tbh) as it avoids stack overlfow(rare chances)(scambled string -> error)
+
+To fill the table there are two steps
+1) Initialization
+2) Convert recursive function to iterative
+
+The whole matrix is filled with subproblems...the last cell in the matrix is the solution of the main problem
+
+The first row and column are reserved for initialization...so the actual contents are mapped from the next row-column
+
+Initialization is necessary because we are converting the recursive function to iterative and the base condition is what is used in initialization
+
+
+### Converting the base condition to initialization
+![image](https://user-images.githubusercontent.com/44740658/110019163-21079c00-7d4e-11eb-8d3e-2fabf5ef6123.png)
+
+### Iterative code for the choice diagram
+![image](https://user-images.githubusercontent.com/44740658/110022088-8610c100-7d51-11eb-8c52-1d0ad58bc7a8.png)
+
+### Summed Up Code
+![image](https://user-images.githubusercontent.com/44740658/110022525-07685380-7d52-11eb-9b39-536ea661066e.png)
+
+
