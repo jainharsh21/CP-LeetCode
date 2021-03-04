@@ -6,7 +6,7 @@
 3) Count Of Subset Sum
 4) Minimum Subset Sum Diff.
 5) Target Sum
-6) # Of Subset With Given Difference
+6) Number Of Subset With Given Difference
 
 ## Recursive Function
 int knapsack(int wt[],int val[],int W,int n){
