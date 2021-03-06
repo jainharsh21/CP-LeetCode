@@ -16,3 +16,5 @@ now s1 would be less than range/2 and we can eliminate the ones whose sum doesnt
 then make a vector consisting of the elements which are remaining and then execture the following code
 
 ![image](https://user-images.githubusercontent.com/44740658/110172218-d146d480-7e22-11eb-91f0-ccdea7480417.png)
+
+
