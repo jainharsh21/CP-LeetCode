@@ -1,11 +1,11 @@
 class Solution {
-    
-    public boolean minimumSubsetSumDifference(int num[],int n,int sum){
+    public int lastStoneWeightII(int[] num) {
         int sum=0,min=Integer.MAX_VALUE;
-        for(int n:nums)
+        for(int n:num)
         {
             sum += n;
         }
+        int n = num.length;
         boolean[][] dp = new boolean[n+1][sum+1];
         for (int i = 0; i <= sum; i++)
             dp[0][i] = false;
@@ -22,9 +22,10 @@ class Solution {
             }
         }
         for(int j=0;j<=sum/2;j++){
-            if(dp[n-1][j]){
+            if(dp[n][j]){
                 min = Math.min(min,sum-2*j);
             }
         }
+        return min;
     }
 }
