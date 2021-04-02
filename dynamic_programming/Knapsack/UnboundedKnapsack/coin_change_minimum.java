@@ -1,3 +1,5 @@
+// init of the all columns of first row would be on max value -1 int(because it takes infinite coins to make amount 0,-1 because we have to add + 1 when we select it...max+1 would give us a negative number)
+// also we would add 1 when we choose a coin..because it increases the number of coin chosen by 1.
 class Solution {
     public int coinChange(int[] coins, int amount) {
         int dp[][] = new int[coins.length+1][amount+1];
