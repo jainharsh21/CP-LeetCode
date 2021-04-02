@@ -1,3 +1,6 @@
+// here we'll have to count the number of zeros...in each addition of 0 it adds two more ways...so final answer should be multiplied by 2 raised to the count of zeros,also while checking if we want to chose element or not...we have to add a condition that the ele is not 0.
+// rest all is the same as count subset sum given difference
+
 class Solution {
     public int countSubsetSum(int[] nums,int n,int sum){
         int[][] dp = new int[n+1][sum+1];
