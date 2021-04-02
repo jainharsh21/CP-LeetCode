@@ -1,3 +1,5 @@
+// create an array of elements consisting of numbers from 1 to n-1(cant include n as we need the number of elements to be >=2)
+
 class Solution {
     public int integerBreak(int n) {
         int arr[] = new int[n-1];
