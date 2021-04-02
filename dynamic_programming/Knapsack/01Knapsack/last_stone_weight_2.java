@@ -1,3 +1,5 @@
+// same as minimum subset sum difference
+
 class Solution {
     public int lastStoneWeightII(int[] num) {
         int sum=0,min=Integer.MAX_VALUE;
