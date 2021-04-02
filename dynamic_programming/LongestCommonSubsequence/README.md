@@ -27,5 +27,13 @@ Here,we'll check if both last characters match...if they do reduce both strings 
         return max(lcs(s1,s2,m-1,n),lcs(s1,s2,m,n-1))
 ```
 
-## Code
+### Code
 ![image](https://user-images.githubusercontent.com/44740658/113385066-f6d4e880-93a4-11eb-8fc0-936f4e509b14.png)
+
+## Memoization(Top Down Approach)
+
+In memoization,we store the results that have been calculated from recursive calls,so if they have to be calculated again,we can directly use the previously stored result instead of calculating again...here we have recursion + matrix...so basically memoization helps
+
+### Code
+![image](https://user-images.githubusercontent.com/44740658/113387323-b75ccb00-93a9-11eb-8f7a-e517c005ec57.png)
+
