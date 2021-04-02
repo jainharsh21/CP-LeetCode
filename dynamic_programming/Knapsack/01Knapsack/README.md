@@ -45,7 +45,7 @@ else if(wt[n-1]>W)
 
 ## Memoization
 
-It is an alternative for top-down approach(tabular)
+It is an alternative for bottom-down approach(tabular)
 
 Adding two lines to the recursive code memoizes it
 
