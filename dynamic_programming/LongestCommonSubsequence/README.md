@@ -37,3 +37,25 @@ In memoization,we store the results that have been calculated from recursive cal
 ### Code
 ![image](https://user-images.githubusercontent.com/44740658/113387323-b75ccb00-93a9-11eb-8f7a-e517c005ec57.png)
 
+## Bottom Up Approach
+
+### Initialisation
+
+The base code in recursion becomes initialisation in bottom-up approach
+Here the first row and column would be initialised to 0
+
+
+### Choice Diagram
+
+```
+    if(x[i-1]==y[j-1])
+        t[i][j] = 1 + t[i-1][j-1]
+    else
+        t[i][j] = max(t[i-1][j],t[i][j-1])
+```
+
+### Note
+The value in t[i][j] would represent the value of LCS where length of string x is i and string y is j
+Hence,the value in t[m][n] would be the final result
+
+
