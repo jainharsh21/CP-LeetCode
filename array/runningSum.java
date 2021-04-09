@@ -1,3 +1,5 @@
+// 1480. Running Sum of 1d Array
+
 class Solution {
     public int[] runningSum(int[] nums) {
         int[] res = new int[nums.length];
