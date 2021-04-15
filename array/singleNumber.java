@@ -1,6 +1,6 @@
 // 136. Single Number
 
-// Bruteforce
+// Bruteforce(view bit manipulation folder for a better solution)
 class Solution {
     int countOccurence(int[] arr,int n){
         int count =0;
